@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
-    Button button,button2,button3,button4,button6;
+    Button button,button2,button3,button4,button5,button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
         button4 = findViewById(R.id.button4);
+        button5 = findViewById(R.id.button5);
         button6 = findViewById(R.id.button6);
-        Button button7 = findViewById(R.id.button7);
     }
     public void syll_button(View view)
     {
