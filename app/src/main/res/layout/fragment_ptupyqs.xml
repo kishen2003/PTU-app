@@ -9,11 +9,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:background="@color/teal_700"
         android:text="PTU Previous year question papers:
 The students must select the semester and the subject to which they want to download the question paper for and the list of question papers according to the year will be displayed to them and they will be able to download it.
 
 PTU CGPA Calculator:
 The students must select the semester and should enter their grades for all the subjects then their corresponding GPA for all the semesters will be displayed and the overall CGPA will also be displayed."
-        android:textColor="@android:color/black"/>
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFFFFF" />
 
 </LinearLayout>
