@@ -1,8 +1,7 @@
 package in.edu.ptuniv;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
+import com.github.barteksc.pdfviewer.PDFView;
 import android.os.Bundle;
 
 public class syllabus extends AppCompatActivity {
@@ -11,6 +10,7 @@ public class syllabus extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_syllabus);
-        Intent intent = getIntent();
+        PDFView pdfView = findViewById(R.id.pdfView);
+        pdfView.fromAsset("syllabus.pdf").load();
     }
 }

@@ -21,5 +21,4 @@ public class about extends AppCompatActivity {
         transaction.commit();
     }
 
-
 }
