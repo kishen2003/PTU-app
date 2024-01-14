@@ -18,6 +18,16 @@
             android:label="@string/title_activity_syllabus"
             android:theme="@style/Theme.CollegeProject" />
         <activity
+            android:name=".sem12"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
+            android:name=".sem3"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
             android:name=".about"
             android:exported="false">
             <meta-data
