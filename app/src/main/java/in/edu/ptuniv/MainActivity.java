@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void syll_button(View view)
     {
-        Intent intent = new Intent(MainActivity.this, syllabus.class);
+        Intent intent = new Intent(MainActivity.this, Syllabus_activity.class);
         startActivity(intent);
     }
     public void notes_button(View view)
