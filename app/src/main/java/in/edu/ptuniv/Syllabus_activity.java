@@ -35,5 +35,53 @@ public class Syllabus_activity extends AppCompatActivity
         startActivity(intent);
     }
 
+    public void sem4(View view)
+    {
+        Intent intent = new Intent(Syllabus_activity.this, sem4.class);
+        startActivity(intent);
+    }
+
+    public void sem5(View view)
+    {
+        Intent intent = new Intent(Syllabus_activity.this, sem5.class);
+        startActivity(intent);
+    }
+
+    public void sem6(View view)
+    {
+        Intent intent = new Intent(Syllabus_activity.this, sem6.class);
+        startActivity(intent);
+    }
+
+    public void sem7(View view)
+    {
+        Intent intent = new Intent(Syllabus_activity.this, sem7.class);
+        startActivity(intent);
+    }
+
+    public void sem8(View view)
+    {
+        Intent intent = new Intent(Syllabus_activity.this, sem8.class);
+        startActivity(intent);
+    }
+
+    public void pec(View view)
+    {
+        Intent intent = new Intent(Syllabus_activity.this, pec.class);
+        startActivity(intent);
+    }
+
+    public void honours(View view)
+    {
+        Intent intent = new Intent(Syllabus_activity.this, honours.class);
+        startActivity(intent);
+    }
+
+    public void overview(View view)
+    {
+        Intent intent = new Intent(Syllabus_activity.this, overview.class);
+        startActivity(intent);
+    }
+
 
 }
