@@ -28,6 +28,46 @@
             android:label="@string/title_activity_syllabus"
             android:theme="@style/Theme.CollegeProject" />
         <activity
+            android:name=".sem4"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
+            android:name=".sem5"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
+            android:name=".sem6"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
+            android:name=".sem7"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
+            android:name=".sem8"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
+            android:name=".pec"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
+            android:name=".honours"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
+            android:name=".overview"
+            android:exported="false"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.CollegeProject" />
+        <activity
             android:name=".about"
             android:exported="false">
             <meta-data
