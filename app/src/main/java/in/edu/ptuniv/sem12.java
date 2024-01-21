@@ -1,8 +1,7 @@
-
 package in.edu.ptuniv;
-        import androidx.appcompat.app.AppCompatActivity;
-        import com.github.barteksc.pdfviewer.PDFView;
-        import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import com.github.barteksc.pdfviewer.PDFView;
+import android.os.Bundle;
 
 public class sem12 extends AppCompatActivity {
 

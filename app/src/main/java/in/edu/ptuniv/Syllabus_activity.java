@@ -3,10 +3,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 public class Syllabus_activity extends AppCompatActivity
 {
     Button btn_sem12, btn_sem3, btn_sem4, btn_sem5, btn_sem6, btn_sem7, btn_sem8, btn_pec, btn_honours, btn_download, btn_overview;
+    private static final String PDF_FILE_NAME = "syllabus.pdf";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_syllabus_activity);
@@ -81,6 +83,13 @@ public class Syllabus_activity extends AppCompatActivity
     {
         Intent intent = new Intent(Syllabus_activity.this, overview.class);
         startActivity(intent);
+    }
+
+    public void download(View view)
+    {
+        Intent intent = new Intent(this, Download.class);
+        intent.putExtra("fileUrl", "https://ptuniv.edu.in/cms/file_contents/academic-curriculum/b-tech/4_BT_CS_2021.pdf");
+        startService(intent);
     }
 
 
