@@ -4,6 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cgpacalculator">
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_sem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="140dp"
+
+        android:text="SEM 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="72dp"
+
+        android:text="SEM 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem1" />
+
+    <Button
+        android:id="@+id/btn_sem5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+
+        android:text="SEM 5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem3" />
+
+    <Button
+        android:id="@+id/btn_sem7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
+
+        android:text="SEM 7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem5" />
+
+    <Button
+        android:id="@+id/stn_sem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="140dp"
+        android:text="SEM 2"
+        app:layout_constraintStart_toEndOf="@+id/btn_sem1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="72dp"
+
+        android:text="SEM 4"
+        app:layout_constraintStart_toEndOf="@+id/btn_sem3"
+        app:layout_constraintTop_toBottomOf="@+id/stn_sem2" />
+
+    <Button
+        android:id="@+id/btn_sem6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="56dp"
+
+        android:text="SEM 6"
+        app:layout_constraintStart_toEndOf="@+id/btn_sem5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem4" />
+
+    <Button
+        android:id="@+id/sem8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="52dp"
+        android:text="SEM 8"
+        app:layout_constraintStart_toEndOf="@+id/btn_sem7"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem6" />
+
+    <Button
+        android:id="@+id/cgpacalculator9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="CGPA calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem7" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
