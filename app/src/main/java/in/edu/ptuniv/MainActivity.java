@@ -1,12 +1,16 @@
 package in.edu.ptuniv;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -23,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button5 = findViewById(R.id.button5);
         button6 = findViewById(R.id.button6);
         Log.i(TAG,"onCreate()");
+
     }
 
     @Override
@@ -91,4 +96,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, about.class);
         startActivity(intent);
     }
+
+
 }
