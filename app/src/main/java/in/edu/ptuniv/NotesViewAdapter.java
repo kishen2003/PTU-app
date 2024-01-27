@@ -1,6 +1,10 @@
 package in.edu.ptuniv;
 
+
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,8 +23,7 @@ public class NotesViewAdapter extends RecyclerView.Adapter<NotesViewAdapter.View
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.notes_list,parent,false);
-        ViewHolder holder=new ViewHolder(view);
-        return holder;
+        return new ViewHolder(view);
     }
 
     @Override
@@ -31,6 +34,10 @@ public class NotesViewAdapter extends RecyclerView.Adapter<NotesViewAdapter.View
             public void onClick(View v) {
                 Toast.makeText(v.getContext(), notess.get(position).getName() + " Selected", Toast.LENGTH_SHORT).show();
                 // Perform additional actions if needed
+                Context context = v.getContext();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(notess.get(position).getLink()));
+                context.startActivity(intent);
             }
         });
 

@@ -3,6 +3,7 @@ package in.edu.ptuniv.data;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import in.edu.ptuniv.data.NotesContract.NotesEntry;
 
 public class NotesDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "notes.db";
@@ -10,7 +11,7 @@ public class NotesDbHelper extends SQLiteOpenHelper {
 
     private final String SQL_CREATE_NOTES_TABLE
             = "CREATE TABLE " + NotesContract.NotesEntry.TABLE_NAME
-            + " (" + NotesContract.NotesEntry._ID + " INTEGER PRIMARY KEY, "
+            + " (" + NotesContract.NotesEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + NotesContract.NotesEntry.COLUMN_NAME + " TEXT, "
             + NotesContract.NotesEntry.COLUMN_LINK + " TEXT NOT NULL);";
 

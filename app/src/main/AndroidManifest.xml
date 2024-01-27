@@ -17,6 +17,11 @@
         <service android:name=".Download"
             android:enabled="true"
             android:exported="false"/>
+        <provider
+            android:authorities="in.edu.ptuniv.data.NotesProvider"
+            android:name=".data.NotesProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"/>
         <activity
             android:name=".Syllabus_activity"
             android:exported="false"
