@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/cgpacalc"
     tools:context=".cgpacalculator">
 
 
@@ -14,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="140dp"
-        android:onClick="fsem1"
+        android:onClick="csem1"
         android:text="SEM 1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -53,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_sem5" />
 
     <Button
-        android:id="@+id/stn_sem2"
+        android:id="@+id/btn_sem2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
@@ -71,7 +70,7 @@
 
         android:text="SEM 4"
         app:layout_constraintStart_toEndOf="@+id/btn_sem3"
-        app:layout_constraintTop_toBottomOf="@+id/stn_sem2" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem2" />
 
     <Button
         android:id="@+id/btn_sem6"
