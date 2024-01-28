@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/semesterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the number of semesters:"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <Spinner
+        android:id="@+id/semesterSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semesterLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:entries="@array/semester_numbers"/>
+
+    <LinearLayout
+        android:id="@+id/textViewsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/semesterSpinner"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate CGPA"
+        android:layout_below="@id/textViewsContainer"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+

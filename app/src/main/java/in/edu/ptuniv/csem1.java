@@ -37,7 +37,7 @@ public class csem1 extends AppCompatActivity {
                 +calgp(grade5,1.5)
                 +calgp(grade6,1.5))
                 /19.5;
-        Intent intent = new Intent(csem1.this,Displaycgpa.class);
+        Intent intent = new Intent(csem1.this,Displaygpa.class);
         intent.putExtra("GPA_RESULT",gpa);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

@@ -13,4 +13,16 @@
         <item>E</item>
         <item>F</item>
     </string-array>
+    <string-array name="semester_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string name="semester_label">Semester %1$d</string>
+    <string name="gpa_edit_text_hint">Enter GPA for Semester %1$d</string>
 </resources>

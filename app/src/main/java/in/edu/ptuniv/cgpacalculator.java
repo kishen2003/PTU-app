@@ -30,4 +30,11 @@ public class cgpacalculator extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void ccgpa(View view)
+    {
+        Intent intent = new Intent(cgpacalculator.this,ccgpa.class);
+        startActivity(intent);
+    }
+
+
 }

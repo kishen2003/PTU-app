@@ -102,7 +102,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sem7" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem7"
+        android:onClick="ccgpa"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
