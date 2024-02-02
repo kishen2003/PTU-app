@@ -36,5 +36,12 @@ public class cgpacalculator extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void csem3(View view)
+    {
+        Intent intent = new Intent(cgpacalculator.this,csem3.class);
+        startActivity(intent);
+    }
+
+
 
 }
