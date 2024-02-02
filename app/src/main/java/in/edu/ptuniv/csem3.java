@@ -4,14 +4,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.FrameLayout;
 import android.widget.Spinner;
-public class csem3 extends AppCompatActivity {
+public class csem3 extends AppCompatActivity implements csem3Fragment.OnItemSelectedListener{
+
+    private static final String TAG = csem3.class.getSimpleName();
+
     private Spinner spinner,spinner1, spinner2, spinner3, spinner4, spinner5, spinner6;
+    private CheckBox checkBox;
+    private FrameLayout fragmentContainer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_csem1);
+        setContentView(R.layout.activity_csem3);
         spinner = findViewById(R.id.spinner);
         spinner1 = findViewById(R.id.spinner1);
         spinner2 = findViewById(R.id.spinner2);
@@ -19,6 +28,21 @@ public class csem3 extends AppCompatActivity {
         spinner4 = findViewById(R.id.spinner4);
         spinner5 = findViewById(R.id.spinner5);
         spinner6 = findViewById(R.id.spinner6);
+        checkBox = findViewById(R.id.checkBox);
+        fragmentContainer =findViewById(R.id.frame_container);
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.frame_container, new csem3Fragment())
+                    .commitNow();
+            fragmentContainer.setVisibility(View.GONE); // Initially hide the fragment
+        }
+        checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                fragmentContainer.setVisibility(View.VISIBLE);
+            } else {
+                fragmentContainer.setVisibility(View.GONE);
+            }
+        });
     }
 
     public void calgpa(View view) {
@@ -74,6 +98,12 @@ public class csem3 extends AppCompatActivity {
                 break;
         }
         return gp;
+    }
+
+    @Override
+    public void onItemSelected(String selected) {
+        // Handle the selected item here
+        Log.d(TAG, "Selected item: " + selected);
     }
 
 }
