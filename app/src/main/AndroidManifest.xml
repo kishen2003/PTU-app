@@ -14,21 +14,27 @@
         android:roundIcon="@drawable/ptu_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeProject"
+        android:background="@drawable/space"
         tools:targetApi="31">
         <activity
             android:name=".csem3"
+            android:label="GPA CALCULATOR"
             android:exported="false" />
         <activity
             android:name=".Displaygpa"
+            android:label="CGPA CALCULATOR"
             android:exported="false" />
         <activity
             android:name=".ccgpa"
+            android:label="CGPA CALCULATOR"
             android:exported="false" />
         <activity
             android:name=".Displaycgpa"
+            android:label="CGPA CALCULATOR"
             android:exported="false" />
         <activity
             android:name=".csem1"
+            android:label="GPA CALCULATOR"
             android:exported="false" />
 
         <service
@@ -99,6 +105,7 @@
             android:theme="@style/Theme.CollegeProject" />
         <activity
             android:name=".about"
+            android:label="@string/about"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -113,6 +120,7 @@
         </activity>
         <activity
             android:name=".cgpacalculator"
+            android:label="@string/cgpa"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -120,6 +128,7 @@
         </activity>
         <activity
             android:name=".previousyearquestionpaper"
+            android:label="Previous Year Question Papers"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -127,13 +136,16 @@
         </activity>
         <activity
             android:name=".syllabus"
+            android:label="@string/title_activity_syllabus"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".notes"
+            android:label="NOTES"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
