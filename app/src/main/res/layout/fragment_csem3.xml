@@ -11,13 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="30dp"
-        android:text="Mathematics - I" />
+        android:text="Human Computer Interaction" />
 
     <Spinner
         android:id="@+id/spinner8"
         android:layout_width="89dp"
         android:layout_height="48dp"
-        android:layout_marginLeft="170dp"
+        android:layout_marginLeft="100dp"
         android:entries="@array/grades" />
 
 </LinearLayout>

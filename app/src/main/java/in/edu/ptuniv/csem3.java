@@ -12,8 +12,9 @@ import android.widget.Spinner;
 public class csem3 extends AppCompatActivity implements csem3Fragment.OnItemSelectedListener{
 
     private static final String TAG = csem3.class.getSimpleName();
-
-    private Spinner spinner,spinner1, spinner2, spinner3, spinner4, spinner5, spinner6;
+    private boolean ishonours;
+    private String grade8;
+    private Spinner spinner,spinner1, spinner2, spinner3, spinner4, spinner5, spinner6, spinner7;
     private CheckBox checkBox;
     private FrameLayout fragmentContainer;
 
@@ -28,6 +29,7 @@ public class csem3 extends AppCompatActivity implements csem3Fragment.OnItemSele
         spinner4 = findViewById(R.id.spinner4);
         spinner5 = findViewById(R.id.spinner5);
         spinner6 = findViewById(R.id.spinner6);
+        spinner7 = findViewById(R.id.spinner7);
         checkBox = findViewById(R.id.checkBox);
         fragmentContainer =findViewById(R.id.frame_container);
         if (savedInstanceState == null) {
@@ -39,8 +41,10 @@ public class csem3 extends AppCompatActivity implements csem3Fragment.OnItemSele
         checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 fragmentContainer.setVisibility(View.VISIBLE);
+                ishonours = true;
             } else {
                 fragmentContainer.setVisibility(View.GONE);
+                ishonours = false;
             }
         });
     }
@@ -53,14 +57,31 @@ public class csem3 extends AppCompatActivity implements csem3Fragment.OnItemSele
         String grade4 = spinner4.getSelectedItem().toString();
         String grade5 = spinner5.getSelectedItem().toString();
         String grade6 = spinner6.getSelectedItem().toString();
-        double gpa = (calgp(grade0,4)
-                +calgp(grade1,4)
-                +calgp(grade2,4)
-                +calgp(grade3,3)
-                +calgp(grade4,1.5)
-                +calgp(grade5,1.5)
-                +calgp(grade6,1.5))
-                /19.5;
+        String grade7 = spinner7.getSelectedItem().toString();
+        double gpa;
+        if(!ishonours) {
+             gpa = (calgp(grade0, 2)
+                    + calgp(grade1, 3)
+                    + calgp(grade2, 4)
+                    + calgp(grade3, 3)
+                    + calgp(grade4, 3)
+                    + calgp(grade5, 1.5)
+                    + calgp(grade6, 1.5)
+                    + calgp(grade7, 1.5))
+                    / 19.5;
+        }
+        else{
+            gpa = (calgp(grade0, 2)
+                    + calgp(grade1, 3)
+                    + calgp(grade2, 4)
+                    + calgp(grade3, 3)
+                    + calgp(grade4, 3)
+                    + calgp(grade5, 1.5)
+                    + calgp(grade6, 1.5)
+                    + calgp(grade7, 1.5)
+                    + calgp(grade8, 4))
+                    / 23.5;
+        }
         Intent intent = new Intent(csem3.this,Displaygpa.class);
         intent.putExtra("GPA_RESULT",gpa);
         startActivity(intent);
@@ -104,6 +125,7 @@ public class csem3 extends AppCompatActivity implements csem3Fragment.OnItemSele
     public void onItemSelected(String selected) {
         // Handle the selected item here
         Log.d(TAG, "Selected item: " + selected);
+        grade8 = selected;
     }
 
 }
