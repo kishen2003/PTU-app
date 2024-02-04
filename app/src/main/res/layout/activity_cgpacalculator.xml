@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cgpacalculator">
+    tools:context=".cgpacalculator"
+    android:background="@drawable/space">
 
 
     <Button
@@ -16,7 +17,8 @@
         android:onClick="csem1"
         android:text="SEM 1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/CustomButtonStyle"/>
 
     <Button
         android:id="@+id/btn_sem3"
@@ -27,7 +29,8 @@
         android:onClick="csem3"
         android:text="SEM 3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sem1" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem1"
+        style="@style/CustomButtonStyle"/>
 
     <Button
         android:id="@+id/btn_sem5"
@@ -38,7 +41,8 @@
 
         android:text="SEM 5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sem3" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem3"
+        style="@style/CustomButtonStyle"/>
 
     <Button
         android:id="@+id/btn_sem7"
@@ -49,13 +53,15 @@
 
         android:text="SEM 7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sem5" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem5"
+        style="@style/CustomButtonStyle"/>
 
     <Button
         android:id="@+id/btn_sem2"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="124dp"
         android:layout_marginTop="140dp"
         android:text="SEM 2"
         app:layout_constraintStart_toEndOf="@+id/btn_sem1"
@@ -63,47 +69,50 @@
 
     <Button
         android:id="@+id/btn_sem4"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
+        android:layout_marginStart="124dp"
         android:layout_marginTop="72dp"
-
         android:text="SEM 4"
         app:layout_constraintStart_toEndOf="@+id/btn_sem3"
         app:layout_constraintTop_toBottomOf="@+id/btn_sem2" />
 
     <Button
         android:id="@+id/btn_sem6"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="124dp"
 
+        android:layout_marginTop="48dp"
         android:text="SEM 6"
         app:layout_constraintStart_toEndOf="@+id/btn_sem5"
         app:layout_constraintTop_toBottomOf="@+id/btn_sem4" />
 
     <Button
         android:id="@+id/sem8"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="60dp"
         android:text="SEM 8"
         app:layout_constraintStart_toEndOf="@+id/btn_sem7"
         app:layout_constraintTop_toBottomOf="@+id/btn_sem6" />
 
     <Button
         android:id="@+id/cgpacalculator9"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="72dp"
+        android:onClick="ccgpa"
         android:text="CGPA calculator"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sem7"
-        android:onClick="ccgpa"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem7" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

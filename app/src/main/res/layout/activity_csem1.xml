@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".csem1">
+    tools:context=".csem1"
+    android:background="@drawable/space">
 
     <Spinner
         android:id="@+id/spinner"
@@ -163,6 +164,7 @@
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner6"
-        android:onClick="calgpa"/>
+        android:onClick="calgpa"
+        style="@style/CustomButtonStyle"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

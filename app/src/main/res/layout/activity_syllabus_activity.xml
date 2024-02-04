@@ -4,29 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/space">
 
     <Button
         android:id="@+id/btn_overview"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="48dp"
+        android:onClick="overview"
         android:text="OVERVIEW"
         app:layout_constraintStart_toEndOf="@+id/btn_honours"
-        app:layout_constraintTop_toBottomOf="@+id/btn_pec"
-        android:onClick="overview"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_pec" />
 
     <Button
         android:id="@+id/btn_sem1"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="108dp"
+        android:onClick="sem_12"
         android:text="SEM 1/2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="sem_12"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_sem3"
@@ -37,7 +40,8 @@
         android:text="SEM 3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_sem1"
-        android:onClick="sem3"/>
+        android:onClick="sem3"
+        style="@style/CustomButtonStyle"/>
 
     <Button
         android:id="@+id/btn_sem4"
@@ -48,7 +52,8 @@
         android:text="SEM 4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_sem3"
-        android:onClick="sem4"/>
+        android:onClick="sem4"
+        style="@style/CustomButtonStyle"/>
 
     <Button
         android:id="@+id/btn_sem5"
@@ -59,62 +64,68 @@
         android:text="SEM 5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_sem4"
-        android:onClick="sem5"/>
+        android:onClick="sem5"
+        style="@style/CustomButtonStyle"/>
 
     <Button
         android:id="@+id/stn_sem6"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="108dp"
+        android:onClick="sem6"
         android:text="SEM 6"
         app:layout_constraintStart_toEndOf="@+id/btn_sem1"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="sem6"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_sem7"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
+        android:layout_marginStart="124dp"
         android:layout_marginTop="60dp"
+        android:onClick="sem7"
         android:text="SEM 7"
         app:layout_constraintStart_toEndOf="@+id/btn_sem3"
-        app:layout_constraintTop_toBottomOf="@+id/stn_sem6"
-        android:onClick="sem7"/>
+        app:layout_constraintTop_toBottomOf="@+id/stn_sem6" />
 
     <Button
         android:id="@+id/btn_sem8"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
+        android:layout_marginStart="124dp"
         android:layout_marginTop="52dp"
+        android:onClick="sem8"
         android:text="SEM 8"
         app:layout_constraintStart_toEndOf="@+id/btn_sem4"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sem7"
-        android:onClick="sem8"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem7" />
 
     <Button
         android:id="@+id/btn_pec"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
+        android:layout_marginStart="124dp"
         android:layout_marginTop="52dp"
+        android:onClick="pec"
         android:text="PEC"
         app:layout_constraintStart_toEndOf="@+id/btn_sem5"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sem8"
-        android:onClick="pec"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem8" />
 
     <Button
         android:id="@+id/btn_honours"
+        style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:onClick="honours"
         android:text="HONOURS"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sem5"
-        android:onClick="honours"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_sem5" />
 
     <Button
         android:id="@+id/btn_download"
@@ -128,6 +139,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_honours"
         app:layout_constraintVertical_bias="0.207"
-        android:onClick="download"/>
+        android:onClick="download"
+        style="@style/CustomButtonStyle"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
