@@ -23,12 +23,12 @@ public class WifiStateReceiver extends BroadcastReceiver {
             case WifiManager.WIFI_STATE_ENABLED:
                 activity.setWifiSwitchChecked(true);
                 activity.setWifiSwitchText("WiFi is ON");
-                activity.displayNotification("WiFi is ON");
+                activity.displayNotification("Keep the wifi on to use services like download");
                 break;
             case WifiManager.WIFI_STATE_DISABLED:
                 activity.setWifiSwitchChecked(false);
                 activity.setWifiSwitchText("WiFi is OFF");
-                activity.displayNotification("WiFi is OFF");
+                activity.displayNotification("Enable wifi to download syllabus and view notes");
                 break;
         }
     }
